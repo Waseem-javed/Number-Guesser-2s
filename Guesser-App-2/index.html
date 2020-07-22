@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="app.js" defer></script>
+    <style>
+         body{
+            height:100vh;
+        }
+        .container-fluid,.container{
+            height: 100%;
+            background:linear-gradient(darkblue,aqua);
+        }
+        .h-100{
+            border:1px solid #FFf;
+            border-color: rgba(0, 255, 255, 0.411);
+            /* box-shadow: -2px 2px 4px #e2e1e1; */
+            -webkit-box-shadow: -3px 5px 234px 43px rgba(250,237,250,1);
+            -moz-box-shadow: -3px 5px 234px 43px rgba(250,237,250,1);
+            box-shadow: -3px 5px 234px 43px rgba(250,237,250,1);
+        }
+        .jumbotron{
+            background:linear-gradient(darkblue,aqua);     
+        }
+        .play-again{
+            border:none;
+            color: papayawhip;
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row h-100">
+                <div class="col-md-6 mx-auto my-auto">
+                    <div class="game jumbotron">
+                        <h3 class="text-white font-weight-bolder">Number Guesser</h3>
+                        <p class="text-light font-weight-italic">Guess a number between <span class="min-num"></span> to <span class="max-num"></span></p>
+                        <div class="input-group">
+                             <input type="number" class="form-control" id="guess-input" placeholder="Enter Your Guess Number.."/>
+                            <div class="input-group-prepend">
+                                <input type="submit" class="btn btn-sm btn-success" id="submit-result-btn"/>
+                            </div>
+                        </div>
+                        <p class="message"></p>
+                        <div class="lead text-center text-white mt-3">
+                            <p>Developed By <span class="badge badge-info">Waseemjaved</span> CopyRight &copy; 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </div>
+    </div>
+</body>
+</html>

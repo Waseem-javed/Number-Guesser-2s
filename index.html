@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            height:100vh;
+        }
+        .container-fluid,.container{
+            height: 100%;
+            background:linear-gradient(darkblue,aqua);
+        }
+        .h-100{
+            border:1px solid #FFf;
+            border-color: rgba(0, 255, 255, 0.411);
+            /* box-shadow: -2px 2px 4px #e2e1e1; */
+            -webkit-box-shadow: -3px 5px 234px 43px rgba(250,237,250,1);
+            -moz-box-shadow: -3px 5px 234px 43px rgba(250,237,250,1);
+            box-shadow: -3px 5px 234px 43px rgba(250,237,250,1);
+        }
+        .jumbotron{
+            background:linear-gradient(darkblue,aqua);     
+        }
+        h4{
+            color: #FFF;
+            text-shadow: 0 0 3px rgb(36, 36, 124), 0 0 3px rgb(24, 92, 24);
+        }
+    </style>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container-fluid">   
+        <div class="container">
+            <div class="row h-100">   
+                <div class="col-md-6 mx-auto my-auto" id="row-data">
+                    <div class="jumbotron p-5 text-center">
+                        <h4 class="p-3 mb-4 font-weight-bolder ">Welcome to Number Guess Game</h4>
+                        <div class="input-group">
+                            <input type="number" id="input-field" placeholder="Guess the Number between 1 to 10" class="form-control">
+                            
+                                <div class="input-group-append">
+                                    <button class="btn btn-sm btn-success result-btn">Submit</button>
+                            </div>
+                        </div>
+                        <button class="d-none btn btn-sm btn-primary mt-2 mb-0 font-weight-bold start-again">Start Again</button>
+                        <div class="lead text-center text-white mt-4">
+                            <p>Developed By <span class="badge badge-info">Waseemjaved</span> CopyRight &copy; 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>
